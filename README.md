@@ -18,3 +18,6 @@
             - Visualize the complete historical table view of each tables in tabular format
             - Visualize the complete historical table view of the denormalized joined table
             - From result from point no 2, discuss how many transactions has been made, when did each of them occur, and how much the value of each transaction
+     
+     - Access the project using docker-compose up
+     - Open browser and copy this: localhost:8888/lab?token=docker
