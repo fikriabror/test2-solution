@@ -15,6 +15,6 @@ RUN conda install \
 
 COPY ./README.md /project
 COPY ./data /project/data
-COPY ./solution.ipnyb /project
+COPY ./solution.ipynb /project
 
 CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root"]
