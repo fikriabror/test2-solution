@@ -1,6 +1,5 @@
 version: "3"
-environment:
-      JUPYTER_TOKEN: "docker"
+
 services:
   jupyter:
     image: jupyterlab:latest
@@ -8,6 +7,9 @@ services:
       - 8888:8888
     volumes:
       - my_volume:/project
+    environment:
+      JUPYTER_TOKEN: "docker"
+    build: . 
 volumes:
   my_volume:
     external: true
